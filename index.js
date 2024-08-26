@@ -32,10 +32,19 @@
 
 // age ="isim"
 
-const age = 26;
+// const daima değer ile başlaması lazım (declare edilmesi)
+// bir kere declare edilince ikinci sefer değeri değiştirilemez
 
-console.log(age);
+// const age = 26;
+
+// console.log(age);
 
 // var yerine -> const yada let
 // const değiştiremeyeceğimiz değişkenler için
 // let değiştirebileceğimiz değişkenler için
+
+const orijinalFiyat = 50;
+const indirim = 20;
+const satisFiyati = orijinalFiyat * (indirim / 100);
+
+console.log(satisFiyati);
