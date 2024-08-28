@@ -152,9 +152,19 @@ let messageFirst = 'Melike';
 let messageSecond = 'Aksoy';
 console.log(messageFirst + messageSecond);
 
-//Görev 3: String Manipülasyonu 3.1. Bir cümle oluşturun ve bu cümledeki karakter sayısını bulun. Sonucu ekrana yazdırın.
+//Görev 3: String Manipülasyonu 
+
+// 3.1. Bir cümle oluşturun ve bu cümledeki karakter sayısını bulun. Sonucu ekrana yazdırın.
+
+let str = "Hello, world!";
+
+console.log(str.length); // prints 13 to the console
 
 //3.2. Oluşturduğunuz cümleyi küçük harfe çevirin ve ekrana yazdırın.
+
+let myString = "HeLLo WoRLD!";
+let lowerCaseString = myString.toLowerCase();
+console.log(lowerCaseString); // output: "hello world!"
 
 // Görev 4: Özel Karakterler 
 // 4.1. Escape karakterlerini kullanarak bir string içinde çift tırnak, tek tırnak, ters eğik çizgi gibi özel karakterleri kullanın. Bu karakterleri içeren bir stringi ekrana yazdırın.
