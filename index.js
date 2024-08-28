@@ -121,7 +121,7 @@
 
 // let firstName = "Alperen";
 
-// let greetMessage = "hoşgeldiniz"
+// let greetMessage = "hoşgeldiniz";
 
 // let message = `Merhaba ${firstName}, ${greetMessage}`;
 
@@ -130,3 +130,39 @@
 // let isPopupVisible = true; 
 
 // if(isPopupVisible){ }
+
+// Görev 1: Temel Değişken Kullanımı 
+// 1.1. Bir değişken oluşturun ve adınızı saklayın. Sonra bu değişkeni kullanarak ekrana "Merhaba, [adınız]!" şeklinde bir mesaj yazdırın.
+
+let firstName = "Melike";
+let message = `Merhaba, ${firstName}!`;
+console.log(message);
+
+// 1.2. Bir sayı değişkeni oluşturun ve bu değişkeni kullanarak bir matematiksel işlem yapın. Sonucu ekrana yazdırın.
+
+const orijinalFiyat = 50;
+const indirim = 50;
+const satisFiyati = orijinalFiyat * (indirim / 100);
+console.log(satisFiyati);
+
+// Görev 2: String Operasyonları 
+// 2.1. İki farklı string değişken oluşturun. Bu iki stringi birleştirerek yeni bir string oluşturun ve ekrana yazdırın.
+
+let messageFirst = 'Melike';
+let messageSecond = 'Aksoy';
+console.log(messageFirst + messageSecond);
+
+//Görev 3: String Manipülasyonu 3.1. Bir cümle oluşturun ve bu cümledeki karakter sayısını bulun. Sonucu ekrana yazdırın.
+
+//3.2. Oluşturduğunuz cümleyi küçük harfe çevirin ve ekrana yazdırın.
+
+// Görev 4: Özel Karakterler 
+// 4.1. Escape karakterlerini kullanarak bir string içinde çift tırnak, tek tırnak, ters eğik çizgi gibi özel karakterleri kullanın. Bu karakterleri içeren bir stringi ekrana yazdırın.
+// 4.2. Template literals kullanarak değişkenleri bir string içinde daha okunabilir bir şekilde nasıl kullanabileceğinizi gösteren bir örnek yapın.
+const birinciMesaj = "Archi's Academy'e hoşgeldiniz";
+const ikinciMesaj = 'Archi\'s Academy\'e hoşgeldiniz';
+const ucuncuMesaj = `Archi's Academy'e hoşgeldiniz`;
+
+console.log(birinciMesaj);
+console.log(ikinciMesaj);
+console.log(ucuncuMesaj);
