@@ -77,24 +77,49 @@
 // }
 // getColor("orange");
 
+// const user = {
+//     firstName: "Alperen",
+//     username: "alperenustunn",
+//     email: "alperen@archisacademy.com",
+//     details: {
+//         title: "Developer"
+//     }
+// }
+
+// //Object Destructuring
+
+// // const {firstName, email, details: {title} } = user;
+
+// // function displayUser(){
+//     function displayUser({firstName, email, details: {title} }){
+//     //console.log(`User: ${user.firstName} - Email: ${user.email} - Title: ${user.details.title}`);
+//     console.log(`User: ${firstName} - Email: ${email} - Title: ${title}`);
+// }
+
+// // displayUser();
+// displayUser(user);
+
 const user = {
-    firstName: "Alperen",
-    username: "alperenustunn",
+    name: "",
+    username: "",
+    phoneNumber: "",
+    email: "",
+    password: "",
+}
+
+const newUser = {
+    username: "alperenarchis",
     email: "alperen@archisacademy.com",
-    details: {
-        title: "Developer"
-    }
+    password: "12345678",
 }
 
-//Object Destructuring
+const createdUser = { ...user, ...newUser, isVerified: true };
 
-// const {firstName, email, details: {title} } = user;
+//Object.assign(user, newUser)
+//yeni object oluşturma {}
+//console.log(Object.assign({},user, newUser))
+//console.log(Object.assign(user, newUser))
+//console.log(newUser);
+//console.log(user);
 
-// function displayUser(){
-    function displayUser({firstName, email, details: {title} }){
-    //console.log(`User: ${user.firstName} - Email: ${user.email} - Title: ${user.details.title}`);
-    console.log(`User: ${firstName} - Email: ${email} - Title: ${title}`);
-}
-
-// displayUser();
-displayUser(user);
+console.log(createdUser);
