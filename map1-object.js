@@ -70,7 +70,6 @@
 // //console.log(colors);
 // //console.log(colors["blue color"]);
 
-
 // // aşağıdaki fonskiyonda değer gelmedi. HATA NEDİR?
 // function getColor(key) {
 //   return colors[key];
@@ -99,27 +98,60 @@
 // // displayUser();
 // displayUser(user);
 
-const user = {
-    name: "",
-    username: "",
-    phoneNumber: "",
-    email: "",
-    password: "",
-}
+// const user = {
+//     name: "",
+//     username: "",
+//     phoneNumber: "",
+//     email: "",
+//     password: "",
+// }
 
-const newUser = {
-    username: "alperenarchis",
-    email: "alperen@archisacademy.com",
-    password: "12345678",
-}
+// const newUser = {
+//     username: "alperenarchis",
+//     email: "alperen@archisacademy.com",
+//     password: "12345678",
+// }
 
-const createdUser = { ...user, ...newUser, isVerified: true };
+// const createdUser = { ...user, ...newUser, isVerified: true };
 
-//Object.assign(user, newUser)
-//yeni object oluşturma {}
-//console.log(Object.assign({},user, newUser))
-//console.log(Object.assign(user, newUser))
-//console.log(newUser);
-//console.log(user);
+// //Object.assign(user, newUser)
+// //yeni object oluşturma {}
+// //console.log(Object.assign({},user, newUser))
+// //console.log(Object.assign(user, newUser))
+// //console.log(newUser);
+// //console.log(user);
 
-console.log(createdUser);
+// console.log(createdUser);
+
+// objectler'de key-value çiftlerinin sırasının önemi yok.
+
+const nums = {
+  1: 1,
+  true: true,
+};
+console.log(nums);
+//console.log(Object.keys(nums));
+
+// Maplerde key-value çiftlerinin sırası önemlidir.
+
+const myMap1 = new Map([
+  [1, 1],
+  //[true, true],
+  [true, "stringDegeri"],
+]);
+
+//console.log(myMap1);
+//console.log(myMap1.keys());
+//myMap1.set("key", "value");
+myMap1.set("amount", 10);
+//console.log(myMap1);
+
+myMap1.forEach((key, value) => {
+  console.log(key, value);
+});
+
+console.log(myMap1.size);
+
+console.log(myMap1.get("amount"));
+console.log(myMap1.get(1));
+console.log(myMap1.get(true));
