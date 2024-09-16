@@ -125,33 +125,52 @@
 
 // objectler'de key-value çiftlerinin sırasının önemi yok.
 
-const nums = {
-  1: 1,
-  true: true,
+// const nums = {
+//   1: 1,
+//   true: true,
+// };
+// console.log(nums);
+// //console.log(Object.keys(nums));
+
+// // Maplerde key-value çiftlerinin sırası önemlidir.
+
+// const myMap1 = new Map([
+//   [1, 1],
+//   //[true, true],
+//   [true, "stringDegeri"],
+// ]);
+
+// //console.log(myMap1);
+// //console.log(myMap1.keys());
+// //myMap1.set("key", "value");
+// myMap1.set("amount", 10);
+// //console.log(myMap1);
+
+// myMap1.forEach((key, value) => {
+//   console.log(key, value);
+// });
+
+// console.log(myMap1.size);
+
+// console.log(myMap1.get("amount"));
+// console.log(myMap1.get(1));
+// console.log(myMap1.get(true));
+
+const userData = {
+  username: "alperenarchis",
+  title: "Software Developer",
+  getBio() {
+    //console.log(`User username is a title`);
+    console.log(`User ${this.username} is a ${this.title}`);
+  },
+
+askToAFriend(){
+    //setTimeout(function(){
+    setTimeout(() => {
+        console.log(`${this.username} ile arkadaş olmak ister misin?`);
+    }, 2000);
+}
 };
-console.log(nums);
-//console.log(Object.keys(nums));
 
-// Maplerde key-value çiftlerinin sırası önemlidir.
-
-const myMap1 = new Map([
-  [1, 1],
-  //[true, true],
-  [true, "stringDegeri"],
-]);
-
-//console.log(myMap1);
-//console.log(myMap1.keys());
-//myMap1.set("key", "value");
-myMap1.set("amount", 10);
-//console.log(myMap1);
-
-myMap1.forEach((key, value) => {
-  console.log(key, value);
-});
-
-console.log(myMap1.size);
-
-console.log(myMap1.get("amount"));
-console.log(myMap1.get(1));
-console.log(myMap1.get(true));
+//userData.getBio();
+userData.askToAFriend();
