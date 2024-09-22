@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Kütüphanesi</title>
+    <link rel="stylesheet" href="object-mapödevi1.css">
+</head>
+<body>
+    <div class="container"></div>
+        <h1>Film Kütüphanesi</h1>
+        <form id="filmForm">
+            <input type="text" id="filmAd" placeholder="Film Adı" required>
+            <input type="text" id="yonetmen" placeholder="Yönetmen" required>
+            <input type="number" id="yayinYili" placeholder="Yayın Yılı" required>
+            <button type="submit">Film Ekle</button>
+        </form>
+
+        <h2>Film Arama</h2>
+        <input type="text" id="arama" placeholder="Film veya Yönetmen Ara">
+        <button id="aramaBtn">Ara</button>
+
+        <h2>Film Güncelle</h2>
+        <input type="text" id="guncelleFilmAd" placeholder="Güncellenecek Film Adı" required>
+        <input type="text" id="yeniYonetmen" placeholder="Yeni Yönetmen" required>
+        <input type="number" id="yeniYayinYili" placeholder="Yeni Yayın Yılı" required>
+        <button id="guncelleBtn">Güncelle</button>
+
+        <h2>Film Sil</h2>
+        <input type="text" id="silinecekFilmAd" placeholder="Silinecek Film Adı" required>
+        <button id="silBtn">Sil</button>
+
+        <h2>Film Listesi</h2>
+        <ul id="filmListesi"></ul>
+        <button id="listeleBtn">Tüm Filmleri Listele</button>
+
+        <h2>Toplam Film Sayısı: <span id="toplamFilmSayisi">0</span></h2>
+    </div>
+    <script src="object-mapödevi1.js"></script>
+</body>
+</html>
