@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f7f9;
+}
+
+.card-container {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.main-image-container {
+  background-color: #0033cc;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-left,
+.card-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.card-left {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-left h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-left p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-left img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.thumbnail-container img {
+  width: calc(100% / 3 - 8px);
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-right h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.card-right .review {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-right .stars {
+  color: #f39c12;
+  margin-right: 5px;
+}
+
+.card-right p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-right .details {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.price {
+  display: flex; 
+  flex-direction: column; 
+  color: #0033cc;
+}
+
+.current-price {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.old-price {
+  font-size: 16px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.rent-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #3563E9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card-left,
+  .card-right {
+    width: 100%;
+  }
+  .card-left h2 {
+    font-size: 16px;
+  }
+  .card-right h3 {
+    font-size: 20px;
+  }
+  .rent-button {
+    width: 100%;
+  }
+}
