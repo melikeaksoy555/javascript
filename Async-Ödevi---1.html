@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Kullanıcı Bilgileri</title>
+    <link rel="stylesheet" href="Async-Ödevi---1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Kullanıcı Bilgileri</h1>
+        <form id="searchForm">
+            <input type="text" id="username" placeholder="GitHub kullanıcı adını girin" required>
+            <button type="submit">Ara</button>
+          </form>
+          <div id="loading" class="loading hidden">Yükleniyor...</div>
+          <div id="error" class="error hidden"></div>
+          <div id="userInfo" class="user-info hidden">
+            <img id="profileImage" src="" alt="Profil Resmi">
+            <h2 id="name"></h2>
+            <p id="bio"></p>
+            <p>Takipçi: <span id="followers"></span></p>
+            <p>Takip Edilen: <span id="following"></span></p>
+            <p>Repo Sayısı: <span id="repos"></span></p>
+            <ul id="recentRepos"></ul>
+          </div>
+        </div>
+        <script src="Async-Ödevi---1.js"></script>
+    
+</body>
+</html>
